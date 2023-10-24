@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.containflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a3e;
+    padding: 1.5rem;
+}
+
+.containflex h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.containflex input[type="text"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #272727; /* Dark input background color */
+    color: #fff; /* Light input text color */
+}
+
+.containflex button {
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-left: 8px;
+    /* background-color: transparent; */
+    color: #fff;
+    border: 2px solid white;
+    border: none;
+    cursor: pointer;
+}
+
+.containflex button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Styles for larger screens */
+.mmovie img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.mov {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; /* Add margin to create spacing on both sides */
+}
+
+.mov div {
+    margin: 0 10px; /* Add margin between movie details and poster */
+}
+
+.mov p {
+    margin: 10px 0;
+}
+
+#movieDetails h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+}
+
+/* Styles for smaller screens (up to 600px wide) */
+@media (max-width: 600px) {
+    .mov {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .mov div {
+        margin: 10px 0; /* Add margin to separate elements vertically */
+    }
+}
+
+span {
+    color: orangered;
+    font-weight: 600;
+}
+
+
+/* js */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    
+}
+
+/* Style for the "Favorites" heading */
+h2 {
+    text-align: center;
+}
